@@ -1,0 +1,31 @@
+{
+  "name": "publish-demo",
+  "version": "1.0.0",
+  "description": "A demo for publishing package",
+  "keywords": [
+    "publish",
+    "demo"
+  ],
+  "homepage": "https://github.com/dangth1101/publish-demo",
+  "bugs": {
+    "url": "https://github.com/dangth1101/publish-demo/issues"
+  },
+  "author": "CapCap <dangth.hcm.it@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangth1101/publish-demo.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build",
+    "format": "prettier --write ."
+  }
+}
