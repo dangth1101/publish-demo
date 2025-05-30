@@ -1,11 +1,11 @@
 {
-  "name": "publish-demo-1101",
+  "name": "capcap-publish-demo",
   "version": "1.0.1",
   "description": "A demo for publishing package",
   "keywords": [
     "publish",
     "demo",
-    "1101"
+    "capcap"
   ],
   "homepage": "https://github.com/dangth1101/publish-demo",
   "bugs": {
