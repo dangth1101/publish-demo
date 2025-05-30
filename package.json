@@ -21,11 +21,27 @@
   "type": "module",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "@arethetypeswrong/cli": "^0.17.4",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
   },
   "scripts": {
-    "build": "tsc",
-    "ci": "npm run build",
-    "format": "prettier --write ."
+    "build": "tsup",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "lint": "tsc",
+    "test": "vitest run",
+    "dev": "vitest",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test"
+  },
+  "main": "dist/index.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
   }
 }
