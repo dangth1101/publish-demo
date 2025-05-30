@@ -22,6 +22,7 @@
   "license": "MIT",
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.17.4",
+    "@changesets/cli": "^2.29.4",
     "prettier": "^3.5.3",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3",
@@ -35,6 +36,8 @@
     "lint": "tsc",
     "test": "vitest run",
     "dev": "vitest",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci",
     "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test"
   },
   "main": "dist/index.js",
