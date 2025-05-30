@@ -1,10 +1,11 @@
 {
-  "name": "publish-demo",
+  "name": "publish-demo-1101",
   "version": "1.0.1",
   "description": "A demo for publishing package",
   "keywords": [
     "publish",
-    "demo"
+    "demo",
+    "1101"
   ],
   "homepage": "https://github.com/dangth1101/publish-demo",
   "bugs": {
